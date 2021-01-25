@@ -1,0 +1,79 @@
+<app-navbar></app-navbar>
+<div class="v6 global joinsteam steam">
+  <div class="responsive-page-template-content">
+    <div class="page-content steam">
+      <div class="joinsteam-content-container">
+        <div id="error-display" style="display: none;"></div>
+        <div class="create-account-form-container">
+          <form #myForm="ngForm"  id="create-account" name="create-account" (ngSubmit)="register1()">
+          <div id="account-form-box">
+            <div class="join-form">
+              <div class="section-title"> Create Your Account </div>
+              <div class="form-row row-flex">
+                <div class="form-area">
+                  <label for="email">Email Address</label>
+                  <input type="text" maxlength="255" name="email" id="email" [(ngModel)]="email">
+                </div>
+              </div>
+              <div class="form-row row-flex">
+                <div class="form-area">
+                  <label class="reenter-row" for="reenter-email">Confirm your Address</label>
+                  <input type="text" maxlength="255" name="reenter-email" id="reenter-email" [(ngModel)]="confirmEmail">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-area">
+                  <div>
+                    <label class="country-select" for="country">Country of Residence</label>
+                    <select name="country" id="country" class="blueish" [(ngModel)]="country">
+                      <option value="1">America</option>
+                      <option value="2">China</option>
+                      <option value="3">German</option>
+                      <option value="4">Japan</option>
+                      <option value="5">Indonesia</option>
+                    </select>
+                  </div>
+                  <div style="clear: left;"></div>
+                </div>
+                <div class="form-row">
+                  <div id="captcha-entry">
+                    <div id="recaptcha_render_4000853609350537943"></div>
+<!--                      <ngx-recaptcha2 #captchaElem [siteKey]="siteKey"></ngx-recaptcha2>-->
+                    <form [formGroup]="aFormGroup">
+                      <ngx-recaptcha2 #captchaElem
+                                      [siteKey]="siteKey"
+                                      formControlName="recaptcha">
+                      </ngx-recaptcha2>
+                    </form>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="ssa-box">
+                    <input type="checkbox" name="i-agree-check" id="i-agree-check">
+                    <label for="i-agree-check" id="label-agree">
+                      I am 13 years of age or older and agree to the terms of the
+                      <a href="https://store.steampowered.com/subscriber_agreement/" target="_blank">
+                        Steam Subscriber Agreement
+                      </a>
+                      and the
+                      <a href="https://store.steampowered.com/privacy_agreement/" target="_blank">
+                        Valve Privacy Policy
+                      </a>.
+                    </label>
+                  </div>
+                  <div id="priv-and-sub">
+                    <button [routerLinkActive]="" type="submit" form="create-account" id="createAccountButton" class="joinsteam-button btn-blue-steamui btn-medium">
+                      <span>Continue</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>

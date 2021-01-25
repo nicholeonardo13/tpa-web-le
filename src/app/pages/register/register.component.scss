@@ -1,0 +1,190 @@
+.joinsteam {
+  background-image: url( 'https://store.akamai.steamstatic.com/public/shared/images/joinsteam/acct_creation_bg.jpg' );
+  min-height: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.v6 .page-content {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.joinsteam-content-container {
+  padding: 50px;
+  min-height: 600px;
+  max-width: 700px;
+}
+
+#error-display {
+  border: 2px solid #b44040;
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  background-color: rgba( 0, 0, 0, .5 );
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+.join-form {
+  padding: 20px 16px;
+  position: relative;
+}
+
+.joinsteam .section-title {
+  text-transform: uppercase;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 34px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.joinsteam .row-flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.joinsteam .form-row {
+  margin: 25px 0;
+}
+
+.joinsteam .form-area {
+  max-width: 320px;
+  flex: 1 1 100%;
+  float: none;
+}
+
+.form-area {
+  float: left;
+  width: 212px;
+}
+
+.joinsteam label {
+  font-size: 14px;
+  color: #b8b6b4;
+  vertical-align: top;
+}
+
+#create-account input, #create-account select {
+  background: #32353C;
+  border-radius: 3px;
+  color: #E9E9E9;
+  padding: 8px 6px;
+  display: block;
+  box-shadow: none;
+  border: none;
+  width: 100%;
+  transition: border ease-in-out .5s;
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: normal;
+}
+
+reenter-row {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.joinsteam .form-row {
+  margin: 25px 0;
+}
+
+.country-select {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.join-form select#country {
+  width: 223px;
+  margin-top: 3px;
+}
+
+#create-account select {
+  background: #32353C;
+  border-radius: 3px;
+  color: #E9E9E9;
+  padding: 8px 6px;
+  display: block;
+  box-shadow: none;
+  border: none;
+  width: 100%;
+  transition: border ease-in-out .5s;
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: normal;
+}
+
+.joinsteam #ssa-box {
+  padding: 10px;
+}
+
+#create-account input {
+  background: #32353C;
+  border-radius: 3px;
+  color: #E9E9E9;
+  padding: 8px 6px;
+  display: block;
+  box-shadow: none;
+  border: none;
+  width: 100%;
+  transition: border ease-in-out .5s;
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: normal;
+}
+
+#create-account input[type="checkbox"] {
+  display: inline;
+  width: 18px;
+  height: 18px;
+  background: #32353C;
+}
+
+#label-agree {
+  margin-left: 4px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.joinsteam #priv-and-sub {
+  margin-top: 35px;
+}
+
+.btn-blue-steamui {
+  border-radius: 2px;
+  border: none;
+  padding: 1px;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none !important;
+  color: #c3e1f8;
+  background: transparent;
+  text-shadow: 1px 1px 0px rgba( 0, 0, 0, 0.3 );
+}
+
+.joinsteam-content-container button > span, .joinsteam-button > span {
+  padding: 3px 50px;
+}
+
+.btn-medium > span, input.btn-medium {
+  padding: 0 15px;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.btn-blue-steamui > span {
+  border-radius: 2px;
+  display: block;
+  background: linear-gradient( to right, #47bfff 5%, #1a44c2 60%);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  background-position: 25%;
+  background-size: 330% 100%;
+}

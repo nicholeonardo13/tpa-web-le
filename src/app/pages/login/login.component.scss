@@ -1,0 +1,217 @@
+.login{
+  min-height: 100%;
+  height: auto;
+  position: relative;
+  color: #E9E9E9;
+  background: radial-gradient(30% 40% at 40% 30%, rgba(33, 36, 41, .5) 0%, rgba(33, 36, 41, 0) 100%) no-repeat, -45vw 0 no-repeat, #212429;
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://store.cloudflare.steamstatic.com/public/shared/images/joinsteam/acct_creation_bg.jpg");
+}
+
+.page-content{
+  width: 94px;
+  margin: 0px auto;
+}
+
+.login .page-content-flex {
+  display: flex;
+  justify-content: center;
+  //align-items: center;
+  min-height: 800px;
+}
+
+.login-left-col {
+  flex-grow: 1;
+  background: radial-gradient(60.12% 60.12% at 104.83% -0.03%, rgb(74, 81, 92, 0.3) 0%, rgba(74, 81, 92, 0) 100%);
+}
+
+.login .loginbox {
+  min-height: 352px;
+  padding: 40px 20px 20px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.loginbox-left {
+  position: relative;
+  min-width: 274px;
+}
+
+.loginbox-content {
+  min-height: 264px;
+  padding-bottom: 16px;
+  max-width: 300px;
+}
+
+.login-title {
+  text-transform: uppercase;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 34px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.login #error-display {
+  color: #FFFFFF;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.loginbox .login-row {
+  margin-bottom: 18px;
+}
+
+.login .input-title {
+  font-size: 14px;
+  color: #b8b6b4;
+  margin-bottom: 5px;
+}
+
+.login .text-field, .login select {
+  max-width: 300px;
+  background: #32353C;
+  border-radius: 3px;
+  color: #E9E9E9;
+  padding: 8px 6px;
+  display: block;
+  box-shadow: none;
+  width: 100%;
+  transition: border ease-in-out .5s;
+  border: 1px solid #26282D;
+  outline: none;
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: normal;
+}
+
+.login-btn-ctn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn-blue-steamui {
+  border-radius: 2px;
+  border: none;
+  padding: 1px;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none !important;
+  color: #c3e1f8;
+  background: transparent;
+  text-shadow: 1px 1px 0px rgba( 0, 0, 0, 0.3 );
+}
+
+.login-btn > span, #login-btn-wait {
+  padding: 3px 80px;
+}
+
+.btn-medium > span, input.btn-medium {
+  padding: 0 15px;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.btn-blue-steamui > span {
+  border-radius: 2px;
+  display: block;
+  background: #75b022;
+  background: -webkit-linear-gradient( top, #75b022 5%, #588a1b 95%);
+  background: linear-gradient( to bottom, #75b022 5%, #588a1b 95%);
+  background: linear-gradient( to right, #47bfff 5%, #1a44c2 60%);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  background-position: 25%;
+  background-size: 330% 100%;
+}
+
+.login-btn-ctn a {
+  margin: 20px 0 0 0;
+  display: block;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.login-btn > span, #login-btn-wait {
+  padding: 3px 80px;
+}
+
+.login-col-padding {
+  padding-top: 100px;
+}
+
+.login-right-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login .login-join-desc {
+  max-width: 60%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.login .subtext {
+  font-size: 14px;
+  color: #b8b6b4;
+}
+
+.login .login-join-desc {
+  max-width: 60%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.about-link {
+  margin-top: 10px;
+  color: #FFFFFF;
+}
+
+.join-image {
+  width: 320px;
+}
+
+img{
+  border: none;
+}
+
+.btnv6-white-transparent {
+  border-radius: 2px;
+  border: none;
+  padding: 1px;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none !important;
+  color: #fff !important;
+  background: transparent;
+}
+
+.btn_medium > span, input.btn-medium {
+  padding: 0 15px;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.btnv6-white-transparent > span {
+  border-radius: 2px;
+  display: block;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 2px;
+}
+
+
+
+

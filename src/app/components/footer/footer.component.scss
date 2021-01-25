@@ -1,0 +1,117 @@
+#footer-spacer {
+  height: 290px;
+  margin-top: 700px;
+}
+
+#footer{
+  background: linear-gradient(to bottom,  rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.5) 100%);
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 16px 0 60px 0;
+  margin: 0;
+}
+
+#footer .footer-content {
+  width: 940px;
+  margin: 0px auto;
+  padding-top: 16px;
+}
+
+#footer .rule {
+  height: 8px;
+  border-top: 1px solid #363c44;
+}
+
+#footer-nav .pulldown {
+  color: #969eab !important;
+  background: rgba(150, 158, 171, 0.3);
+}
+
+.pulldown {
+  margin-right: 5px;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.btnv6-blue-hoverfade {
+  border-radius: 2px;
+  border: none;
+  padding: 1px;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none !important;
+  color: #67c1f5 !important;
+  background: rgba( 103, 193, 245, 0.2 );
+}
+
+.btn-small > span, input.btn-small {
+  padding: 0 15px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.btnv6-blue-hoverfade > span {
+  border-radius: 2px;
+  display: block;
+  background: transparent;
+}
+
+#footer #footer-logo-steam {
+  float: right;
+  padding-top: 2px;
+}
+
+img {
+  border: none;
+}
+
+#footer #footer-logo {
+  float: left;
+  padding-top: 2px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#footer #footer-logo img {
+  height: 25px;
+  width: auto;
+}
+
+#footer #footer-text {
+  float: left;
+  margin-left: 12px;
+  color: #8F98A0;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+#footer #footer-text a {
+  color: #C6D4DF;
+}
+
+#footer .valve-links {
+  margin-top: 8px;
+  float: left;
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  color: #61686D;
+}
+
+#footer .valve-links a {
+  color: #C6D4DF;
+}
+
+#footer .valve-links img {
+  vertical-align: bottom;
+}
+
+
+
+

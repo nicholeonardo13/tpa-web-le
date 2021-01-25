@@ -4,3 +4,20 @@
   min-height: 100%;
   height: auto;
 }
+
+.home-page-body-ctn {
+  min-width: 972px;
+  //display: flex;
+  //justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-page-content {
+  position: relative;
+  //justify-content: center;
+  //display: flex;
+  width: 80%;
+  padding: 0 16px;
+  margin: 0 auto;
+}

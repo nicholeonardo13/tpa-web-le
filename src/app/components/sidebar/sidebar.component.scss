@@ -1,0 +1,121 @@
+.home-page-gutter{
+  top: 17px;
+  position: relative;
+  //display: flex;
+  //flex-direction: row;
+  left: 0;
+  z-index: 2;
+}
+
+.home-page-gutter-block{
+  border: none;
+  background: none;
+  padding-left: 0px;
+  width: 210px;
+  margin-bottom: 20px;
+}
+
+.gutter-header, a.gutter-item{
+  color: #c6d4df;
+  font-size: 11px;
+  text-transform: uppercase;
+  line-height: 16px;
+  margin: 7px 0;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.home-page-gutter-giftcard {
+  max-width: 100%;
+}
+
+img{
+  border: none;
+}
+
+a.gutter-giftcard.gutter-item{
+  margin: 0 0 14px 0;
+}
+
+a.gutter-item{
+  color: #66c0f4;
+  display: block;
+  font-size: 13px;
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: normal;
+}
+
+.gutter-item .icon.friends {
+  background-position: 0px 0px;
+}
+
+.gutter-item .icon {
+  background-image: url( '/public/images/v6/store_menu_icons.png?v=2' );
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -10px;
+}
+
+.gutter-item .icon.curators {
+  background-position: -16px 0px;
+}
+
+.gutter-item .icon.tags {
+  background-position: -32px 0px;
+}
+
+.gutter-item .icon.queue {
+  background-position: -48px 0px;
+}
+
+.gutter-item .icon.queue-new {
+  background-position: -64px 0px;
+}
+
+.gutter-header.pad {
+  margin-top: 15px;
+}
+
+.gutter-item .icon.top-sellers {
+  background-position: -80px 0px;
+}
+
+.gutter-item .icon.recent {
+  background-position: -112px 0px;
+}
+
+.gutter-item .icon.upcoming {
+  background-position: -128px 0px;
+}
+
+.gutter-item .icon.discounts {
+  background-position: -144px 0px;
+}
+
+.gutter-item .icon.vr {
+  background-position: -160px 0px;
+}
+
+.gutter-item .icon.controller {
+  background-position: -176px 0px;
+}
+
+
+.home-page-gutter-block {
+  border: none;
+  background: none;
+  padding-left: 0px;
+  width: 210px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+

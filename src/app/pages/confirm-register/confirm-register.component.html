@@ -1,0 +1,47 @@
+<app-navbar></app-navbar>
+<div class="v6 global joinsteam steam">
+  <div class="responsive-page-template-content">
+    <div class="page-content steam">
+      <div class="joinsteam-content-container">
+        <div id="error-display" style="display: none;"></div>
+        <div class="create-account-form-container">
+          <form #myForm="ngForm" action="" id="create-account" name="create-account" (ngSubmit)="confirmRegister()">
+            <div id="account-form-box">
+              <div class="join-form">
+                <div class="section-title"> Create Your Account </div>
+                <div class="form-row row-flex account-name-row">
+                  <div class="form-area">
+                    <label for="accountname">Steam Account Name</label>
+                    <input type="text" maxlength="64" name="accountname" id="accountname" [(ngModel)]="username">
+                  </div>
+                </div>
+                <div class="form-row row-flex">
+                  <div class="form-area">
+                    <label for="password">Choose Password</label>
+                    <input type="password" maxlength="64" name="password" id="password"  autocomplete="on" [(ngModel)]="password">
+                  </div>
+                  <div style="clear: left;"></div>
+                </div>
+                <div class="form-row flex-row-align-end row-flex">
+                  <div class="form-area">
+                    <label class="reenter-row" for="reenter-password">Confirm Password</label>
+                    <input type="password" maxlength="64" name="reenter-password" id="reenter-password" autocomplete="on" [ngModel]="confirmPassword">
+                  </div>
+                  <div style="clear: left;"></div>
+                </div>
+                <div class="form-row">
+                  <div id="priv-and-sub">
+                    <button type="submit" form="create-account" id="createAccountButton" class="joinsteam-button btn-blue-steamui btn-medium">
+                      <span>Done</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>

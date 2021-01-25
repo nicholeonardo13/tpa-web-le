@@ -1,9 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~font-awesome/css/font-awesome.css";
+
 *{
   margin: 0;
   padding: 0;
 }
 
 body{
-  overflow: hidden;
+  //overflow: hidden;
+}
+
+.v6{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #c6d4df;
+  font-size: 12px;
 }
