@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router , ActivatedRoute } from '@angular/router';
 import {Apollo, gql} from 'apollo-angular';
+import {RegisterService} from '../../services/register.service';
 
 @Component({
   selector: 'app-confirm-register',
@@ -13,26 +14,18 @@ export class ConfirmRegisterComponent implements OnInit {
   country =  '';
   password = '';
   confirmPassword =  '';
+  otp = '';
 
-  constructor(private router: Router , private actRoute: ActivatedRoute ,  private apollo: Apollo) { }
+  constructor(private router: Router , private actRoute: ActivatedRoute ,  private service: RegisterService) { }
 
   ngOnInit(): void {
-    // console.log(this.actRoute.snapshot.paramMap.get('email'));
-    this.email =  this.actRoute.snapshot.paramMap.get('email');
-    this.country = this.actRoute.snapshot.paramMap.get('country');
   }
   confirmRegister(): void{
-    this.apollo.mutate<{register: string}>({
-      mutation: gql`mutation register($email:String! , $username:String! , $password:String! , $country_region:Int! ){
-  register(email: $email , username: $username , password: $password , country_region: $country_region)
-}`, variables: {
-        email: this.email,
-        username: this.username,
-        password: this.password,
-        country_region: Number(this.country)
+    this.service.registers(this.username , this.password , this.otp).subscribe(data => {
+      const check = data.data.register;
+      if (check !== 'OTP Salah' && check !== 'OTP Tidak Valid'){
+        this.router.navigateByUrl('/home');
       }
-    }).subscribe(data => {
-      this.router.navigateByUrl('/home');
     });
   }
 }

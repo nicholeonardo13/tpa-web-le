@@ -18,7 +18,7 @@ const routes: Routes = [{
     component: RegisterComponent
   },
   {
-    path: 'confirm-register/:email/:country',
+    path: 'confirm-register',
     component: ConfirmRegisterComponent
   },
 ];

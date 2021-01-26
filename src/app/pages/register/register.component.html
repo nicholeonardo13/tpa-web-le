@@ -26,11 +26,7 @@
                   <div>
                     <label class="country-select" for="country">Country of Residence</label>
                     <select name="country" id="country" class="blueish" [(ngModel)]="country">
-                      <option value="1">America</option>
-                      <option value="2">China</option>
-                      <option value="3">German</option>
-                      <option value="4">Japan</option>
-                      <option value="5">Indonesia</option>
+                      <option *ngFor="let c of listCountry; let i = index" value="{{i+1}}">{{c.country_name}}</option>
                     </select>
                   </div>
                   <div style="clear: left;"></div>
@@ -38,7 +34,6 @@
                 <div class="form-row">
                   <div id="captcha-entry">
                     <div id="recaptcha_render_4000853609350537943"></div>
-<!--                      <ngx-recaptcha2 #captchaElem [siteKey]="siteKey"></ngx-recaptcha2>-->
                     <form [formGroup]="aFormGroup">
                       <ngx-recaptcha2 #captchaElem
                                       [siteKey]="siteKey"
@@ -59,6 +54,13 @@
                       <a href="https://store.steampowered.com/privacy_agreement/" target="_blank">
                         Valve Privacy Policy
                       </a>.
+                    </label>
+                    <br><br>
+                    <label id="label-otp">
+                      I Already Have an OTP Code
+                      <a href="" routerLink="/confirm-register" routerLinkActive="active">
+                        Click Here
+                      </a>
                     </label>
                   </div>
                   <div id="priv-and-sub">
