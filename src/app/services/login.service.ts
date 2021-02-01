@@ -17,6 +17,17 @@ export class LoginService {
         username: usernames,
         password: passwords
       }
-    })
+    });
+  }
+  getUserByID(): Observable<Query>{
+    return this.apollo.query<Query>({
+      query: gql`query userbyid{
+  user{
+    id,
+    username,
+    money
+  }
+}`,
+    });
   }
 }

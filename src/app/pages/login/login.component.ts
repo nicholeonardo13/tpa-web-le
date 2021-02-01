@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
 
   username = '';
   password = '';
-
+  error = '';
   constructor(private service: LoginService, private router: Router) { }
 
   ngOnInit(): void {
@@ -23,10 +23,14 @@ export class LoginComponent implements OnInit {
 
 
   logins(): void {
+    if (this.username === ''){
+      this.error = 'USERNAME OI';
+    }else if (this.password === ''){
+      this.error = 'PASSWORD OII';
+    }
     this.service.login(this.username , this.password).subscribe(data => {
       const jwt = data.data.login;
       if (jwt !== 'Wrong'){
-        localStorage.setItem('jwt', jwt);
         this.router.navigateByUrl('/home');
       }
     });
